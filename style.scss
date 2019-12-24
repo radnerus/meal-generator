@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+* {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container {
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+
+    .header-container {
+        h1 {
+            color: rgb(238, 48, 48);
+        }
+
+        button {
+            border: 1px solid red;
+            font-size: 25px;
+            color: white;
+            background-color: red;
+            height: 40px;
+            width: 200px;
+            border-radius: 20px;
+        }
+
+        button:hover {
+            color: black;
+            background-color: white;
+        }
+
+        button:focus {
+            outline: none !important;
+        }
+    }
+
+    .meal-container {
+        h3.category {
+            opacity: 0.5;
+            line-height: 0;
+            margin-bottom: 40px;
+            font-size: 15px;
+        }
+
+        img {
+            width: 30%;
+            border-radius: 50%;
+        }
+
+    }
+
+
+    .recipe {
+        margin-top: 75px;
+        .container {
+            text-align: left;
+            width: 50%;
+            float: left;
+
+            li>span {
+                text-transform: capitalize;
+            }
+
+            .ingredient {
+                color: black;
+                font-weight: 900;
+            }
+
+            .measure {
+                opacity: 0.6;
+            }
+        }
+
+        .video {
+            width: 50%;
+            float: left;
+        }
+    }
+
+}
