@@ -24,7 +24,7 @@ const getFormattedMealHtml = (meal) => {
             const ingredient = meal[`strIngredient${i}`];
             const measure = meal[`strMeasure${i}`];
             html += `
-                <li><span class="ingredient">${ingredient}</span><span class="measure"> : ${measure}</span> </li>
+                <li><span class="ingredient">${ingredient}</span><span class="measure">${measure ? ' : ' + measure : ''}</span> </li>
             `;
         }
         if (i === 20) {
